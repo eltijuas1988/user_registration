@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  post 'login/user_info/show'
+
+  get 'confirmation/login/enter' => 'login#enter'
+
   post 'confirmation/success'
 
 

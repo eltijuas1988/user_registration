@@ -1,0 +1,17 @@
+<h1>Login Page</h1>
+
+<h3><%= flash[:notice1] %><h3>
+<h3><%= flash[:notice2] %><h3>
+
+<form action="enter" method="get">
+  <input id="user_name" type="text" name="user_name" placeholder="User Name" required autofocus/>
+  </br>
+  <input id="password" type="text" name="password" placeholder="Password" required/>
+  </br>
+  <input type="submit" value="login"/>
+</form>
+
+<p>Need to register? click 'register' below</p>
+<form action="register/fill" method="get">
+  <input type="submit" value="Register">
+</form>
