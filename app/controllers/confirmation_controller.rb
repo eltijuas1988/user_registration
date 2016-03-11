@@ -2,23 +2,23 @@ class ConfirmationController < ApplicationController
   def success
     @user = User.new
 
-    if !@user.first_name.nil?
-      redirect_to 'login/enter'
-    end
+    # if !@user.first_name.nil?
+    #   redirect_to 'login/enter'
+    # end
 
     @user.first_name = params[:first_name]
-    session[:first_name] = @user.first_name
-    @first_name = session[:first_name].strip
+    # session[:first_name] = @user.first_name
+    # @first_name = session[:first_name].strip
 
     @user.last_name = params[:last_name].strip
 
     @user.user_name = params[:user_name].strip
-    session[:user_name] = @user.user_name
-    @user_name = session[:user_name].strip
+    # session[:user_name] = @user.user_name
+    # @user_name = session[:user_name].strip
 
     @user.password = params[:password].strip
-    session[:password] = @user.password
-    @password = session[:password].strip
+    # session[:password] = @user.password
+    # @password = session[:password].strip
 
     @user.street = params[:street].strip
 
@@ -31,6 +31,7 @@ class ConfirmationController < ApplicationController
     @user.email = params[:email].strip
 
     @user.save
+
 
     # @phone1 = Phone.new
 

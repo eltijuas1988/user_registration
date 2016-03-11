@@ -1,2 +1,14 @@
-<h1>UserInfo#show</h1>
-<p>Find me in app/views/user_info/show.html.erb</p>
+<h1>Congratulations, <%= @user.first_name %> <%= @user.last_name %>! Here is your info</h1>
+
+<p>User ID: <%= @user.id %></p>
+<p>User Name: <%= @user.user_name %></p>
+<p>Street Address: <%= @user.street %></p>
+<p>State: <%= @user.state %></p>
+<p>PO Box: <%= @user.postal_code %></p>
+<p>Country: <%= @user.country %></p>
+<p>Email: <%= @user.email %></p>
+
+<!-- Need to have edit button to change info -->
+<form action="/login/enter" method="get">
+  <input type="submit" value="Logout"/>
+</form>

@@ -1,5 +1,5 @@
-<h1>Congratulations, <%= @first_name %>! You are now registered. Click 'Login' please to begin.</h1>
+<h1>Congratulations, <%= @user.first_name %>! You are now registered. Click 'Login' please to begin.</h1>
 
-<form action="login/enter" method="get">
+<form action="/login/enter" method="get">
   <input type="submit" value="Login page">
 </form>

@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
 
-  post 'login/user_info/show'
+  get 'user_info/show'
 
-  get 'confirmation/login/enter' => 'login#enter'
+  get 'login/enter'
 
   post 'confirmation/success'
-
 
   get 'register/fill'
 
