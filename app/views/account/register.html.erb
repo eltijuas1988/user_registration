@@ -1,0 +1,49 @@
+<h1>Register</h1>
+
+<%= flash[:notice] %>
+<!-- <form action="/confirmation/success" method="post"> -->
+<form action="/account/register" method="post">
+  <!-- <input  id="user_name" type="text" name="user_name" value="<%= @userid %>" placeholder="User Name" required/> -->
+
+  <input id="first_name" type="text" name="first_name" placeholder="First Name" required autofocus/>
+  </br>
+  </br>
+  <input id="last_name" type="text" name="last_name" placeholder="Last Name" required/>
+  </br>
+  </br>
+  <input autofocus id="user_name" type="text" name="user_name" placeholder="User Name" required/>
+  </br>
+  </br>
+  <input id="password" type="text" name="password" placeholder="Password" required/>
+  </br>
+  </br>
+  <input id="street" type="text" name="street" placeholder="Street" required/>
+  </br>
+  </br>
+  <input id="state" type="text" name="state" placeholder="State" required/>
+  </br>
+  </br>
+  <input id="postal_code" type="text" name="postal_code" placeholder="Postal Code" required/>
+  </br>
+  </br>
+  <input id="country" type="text" name="country" placeholder="Country" required/>
+  </br>
+  </br>
+  <input id="email" type="text" name="email" placeholder="E-Mail" required/>
+  </br>
+  </br>
+  <input id="phone1" type="text" name="phone1" placeholder="Phone or N/A"/>
+  </br>
+  </br>
+  <input id="phone2" type="text" name="phone2" placeholder="Phone or N/A"/>
+  </br>
+  </br>
+  <input id="phone3" type="text" name="phone3" placeholder="Phone or N/A"/>
+  </br>
+  </br>
+  <input type="submit" value="submit"/>
+</form>
+
+<form action="/account/enter" method="get">
+  <input type="submit" value="Login"/>
+</form>

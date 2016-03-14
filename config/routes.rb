@@ -1,19 +1,25 @@
 Rails.application.routes.draw do
 
-  get 'user_info/show'
 
-  get 'login/enter'
+  get 'account/register'
 
-  post 'confirmation/success'
+  post 'account/register'
 
-  get 'register/fill'
+  get 'account/confirm'
 
+  get 'account/enter'
+
+  post 'account/enter'
+
+  get 'account/show'
+
+  get 'account/logout'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'register#fill'
+  root 'account#register'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
