@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'account/enter'
 
+  post 'enter' => 'account#enter'
+
   post 'account/enter'
 
   get 'account/show'

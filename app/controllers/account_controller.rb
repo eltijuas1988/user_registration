@@ -87,11 +87,11 @@ class AccountController < ApplicationController
   end
 
   def show
-    if params[:user_name].nil?
-      redirect_to '/account/enter'
-    else
+    # if params[:user_name].nil?
+    #   redirect_to '/account/enter'
+    # else
       @user = User.find(session[:id])
-    end
+    # end
   end
 
   def logout
