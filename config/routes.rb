@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   get 'account/show'
 
+  get 'logout' => 'account#ogout'
+
   get 'account/logout'
 
   # The priority is based upon order of creation: first created -> highest priority.
